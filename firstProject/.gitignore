@@ -1,5 +1,7 @@
 
 .idea/
+firstProject.iml
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
