@@ -2,19 +2,7 @@ package loops;
 import java.util.Scanner;
 
 public class Looping {
-    public static void main(String[] args) {
-
-        /*int x = 10;
-        while (x > 0){
-            System.out.println(x--);
-        }
-        System.out.println("We have lift off");*/
-
-        /*int sum = 0;
-        for (int i=0; i < 10; sum += i++) {
-            System.out.println("Sum is " + sum);
-        }*/
-
+    static void Seasons(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number between 1 and 12 pls: ");
         int userNumber = scanner.nextInt();
@@ -42,9 +30,24 @@ public class Looping {
                 break;
             default:
                 System.out.println("Invalid number");
+                Seasons();
 
         }
+    }
 
+    public static void main(String[] args) {
 
+        Seasons();
+
+        /*int x = 10;
+        while (x > 0){
+            System.out.println(x--);
+        }
+        System.out.println("We have lift off");*/
+
+        /*int sum = 0;
+        for (int i=0; i < 10; sum += i++) {
+            System.out.println("Sum is " + sum);
+        }*/
     }
 }
