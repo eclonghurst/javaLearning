@@ -1,9 +1,9 @@
-package ClassesObjects;
+package ArraysLists;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookConstruct {
+public class Book {
 
     private String name;
     private String author;
@@ -12,17 +12,18 @@ public class BookConstruct {
     private Boolean completed;
     public static String bookOwner = "Emily";
 
-    public BookConstruct(){
+    public Book() {
 
     }
-    public BookConstruct(String name, String author, int cost, String genre, Boolean completed) {
+
+    public Book(String name, String author, int cost, String genre, Boolean completed) {
         this.name = name;
         this.author = author;
         this.cost = cost;
         this.genre = genre;
         this.completed = completed;
     }
-    public BookConstruct(String name, String author, int cost,Boolean completed) {
+    public Book(String name, String author, int cost, Boolean completed) {
         this.name = name;
         this.author = author;
         this.cost = cost;
@@ -32,4 +33,6 @@ public class BookConstruct {
             return name + " is a " + genre + " book, written by " + author + " that costs £" + cost + ". Read by " + bookOwner + " = "
                     + completed;
     }
+
+
 }
