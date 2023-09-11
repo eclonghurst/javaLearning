@@ -1,4 +1,4 @@
-package OOP;
+package ClassesObjects;
 
 public class BookRunner {
 
