@@ -25,7 +25,7 @@ public class BookConstruct {
         this.cost = cost;
         this.completed = completed;
     }
-    public String bookDetails() {
+    public String toString() {
             return name + " is a " + genre + " book, written by " + author + " that costs £" + cost + ". Read by " + bookOwner + " = "
                     + completed;
     }
