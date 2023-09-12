@@ -33,7 +33,7 @@ public class Garage {
         garage.clear();
     }
 
-    public float calculateBill() {
+    public String calculateBill() {
         float totalBill = 0;
         for (Vehicle v : garage) {
             if (v.getClass() == Car.class) {
@@ -45,8 +45,12 @@ public class Garage {
             else if (v.getClass() == Plane.class) {
                 totalBill += 500;
             }
-            else return totalBill;
+            else return "Your bill is" + totalBill;
         }
-        return totalBill;
+        return "Your bill is: " + totalBill;
+    }
+
+    public void removeVehicleByType(String vehicleType){
+        garage.removeIf(v -> v.getClass().getSimpleName().equals(vehicleType));
     }
 }
