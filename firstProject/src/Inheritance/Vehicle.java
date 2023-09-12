@@ -6,6 +6,8 @@ public class Vehicle {
     private float weight;
     private float maxSpeed;
     private int age;
+    private int id;
+    private static int count;
 
     public Vehicle(String name, String manufacturer, float weight, float maxSpeed, int age){
         this.name = name;
@@ -13,9 +15,11 @@ public class Vehicle {
         this.weight = weight;
         this.maxSpeed = maxSpeed;
         this.age = age;
+        this.id = count++;
     }
 
     public Vehicle() {
+        this.id = count++;
     }
 
     @Override
@@ -67,5 +71,9 @@ public class Vehicle {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public int getId() {
+        return this.id;
     }
 }
