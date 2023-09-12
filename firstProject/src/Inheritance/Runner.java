@@ -38,12 +38,15 @@ public class Runner{
     g.removeAllVehicles();
     System.out.println(g);*/
 
-    System.out.println(g.calculateBill());
+/*    System.out.println(g.calculateBill());*/
+
+    // overriding abstract method instead
+    System.out.println(g.billTotal());
 
     g.removeVehicleByType("Car");
     System.out.println(g);
 
-    System.out.println(g.calculateBill());
+    System.out.println(g.billTotal());
 
     }
 }

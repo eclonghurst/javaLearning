@@ -50,6 +50,15 @@ public class Garage {
         return "Your bill is: " + totalBill;
     }
 
+    // override methods from child classes
+    public String billTotal() {
+        double total = 0;
+        for (Vehicle v : garage) {
+            total += v.calcBill();
+        }
+        return "Your bill is: " + total;
+    }
+
     public void removeVehicleByType(String vehicleType){
         garage.removeIf(v -> v.getClass().getSimpleName().equals(vehicleType));
     }

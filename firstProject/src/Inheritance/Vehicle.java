@@ -1,6 +1,6 @@
 package Inheritance;
 
-public class Vehicle {
+public abstract class Vehicle {
     private String name;
     private String manufacturer;
     private float weight;
@@ -21,6 +21,8 @@ public class Vehicle {
     public Vehicle() {
         this.id = count++;
     }
+
+    public abstract double calcBill();
 
     @Override
     public String toString() {
