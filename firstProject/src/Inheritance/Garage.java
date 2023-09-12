@@ -7,6 +7,13 @@ public class Garage {
 
     private List<Vehicle> garage = new ArrayList<>();
 
+    @Override
+    public String toString() {
+        return "Garage{" +
+                "garage=" + garage +
+                '}';
+    }
+
     public boolean addVehicle(Vehicle v) {
         return this.garage.add(v);
     }
@@ -22,13 +29,24 @@ public class Garage {
         return false;
     }
 
-    public void removeAllVehicles(){
+    public void removeAllVehicles() {
         garage.clear();
     }
-    @Override
-    public String toString() {
-        return "Garage{" +
-                "garage=" + garage +
-                '}';
+
+    public float calculateBill() {
+        float totalBill = 0;
+        for (Vehicle v : garage) {
+            if (v.getClass() == Car.class) {
+                totalBill += 100;
+            }
+            else if (v.getClass() == Motorbike.class) {
+                totalBill += 20;
+            }
+            else if (v.getClass() == Plane.class) {
+                totalBill += 500;
+            }
+            else return totalBill;
+        }
+        return totalBill;
     }
 }

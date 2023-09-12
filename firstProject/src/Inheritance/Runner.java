@@ -25,10 +25,13 @@ public class Runner{
     g.addVehicle(p);
     System.out.println(g);
 
-    g.removeVehicle(0);
+  /*  g.removeVehicle(0);*/
     System.out.println(g);
 
-    g.removeAllVehicles();
+ /*   g.removeAllVehicles();*/
     System.out.println(g);
+
+    System.out.println(g.calculateBill());
+
     }
 }
