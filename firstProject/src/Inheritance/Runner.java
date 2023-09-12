@@ -8,6 +8,7 @@ public class Runner{
     Car c2 = new Car("Hatchback", "Volkswagen", 300, 140, 8);
 //        System.out.println(c);
 
+    Motorbike m2 = new Motorbike("R8", "Yamaha", 60, 220, 4);
     // Setters
     Motorbike m = new Motorbike();
         m.setName("R7");
@@ -25,6 +26,7 @@ public class Runner{
     g.addVehicle(c);
     g.addVehicle(c2);
     g.addVehicle(m);
+    g.addVehicle(m2);
     g.addVehicle(p);
     System.out.println(g);
 
@@ -40,6 +42,8 @@ public class Runner{
 
     g.removeVehicleByType("Car");
     System.out.println(g);
+
+    System.out.println(g.calculateBill());
 
     }
 }
