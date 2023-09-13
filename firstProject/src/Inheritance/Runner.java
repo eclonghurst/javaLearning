@@ -1,5 +1,8 @@
 package Inheritance;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Runner{
     public static void main(String[] args) {
 
@@ -48,5 +51,15 @@ public class Runner{
 
     System.out.println(g.billTotal());
 
+    //Interfaces
+    Bird b = new Bird("Macaw", 2);
+    List<Flyable> flyables = new ArrayList<>();
+    flyables.add(p);
+    flyables.add(b);
+
+    System.out.println(flyables);
+    for (Flyable f : flyables){
+        f.fly();
+        }
     }
 }
