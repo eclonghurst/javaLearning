@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritance.first;
 
 public abstract class Vehicle {
     private String name;
@@ -20,6 +20,10 @@ public abstract class Vehicle {
 
     public Vehicle() {
         this.id = count++;
+    }
+
+    public Vehicle(String name) {
+        this.name = name;
     }
 
     public abstract double calcBill();

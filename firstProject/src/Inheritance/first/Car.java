@@ -1,9 +1,13 @@
-package Inheritance;
+package Inheritance.first;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle {
 
     public Car() {
         super();
+    }
+
+    public Car(String name) {
+        super(name);
     }
 
     @Override

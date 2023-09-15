@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritance.second;
 
 public interface Flyable {
 

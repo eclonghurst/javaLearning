@@ -1,6 +1,8 @@
-package Inheritance;
+package Inheritance.first;
 
-public class Plane extends Vehicle implements Flyable{
+import Inheritance.second.Flyable;
+
+public class Plane extends Vehicle implements Flyable {
 
     public Plane() {
         super();

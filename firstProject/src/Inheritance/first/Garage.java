@@ -1,4 +1,6 @@
-package Inheritance;
+package Inheritance.first;
+
+import Inheritance.third.VehicleNotFoundException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -61,5 +63,12 @@ public class Garage {
 
     public void removeVehicleByType(String vehicleType){
         garage.removeIf(v -> v.getClass().getSimpleName().equals(vehicleType));
+    }
+
+    public Vehicle findById(int id) {
+        for (Vehicle v : this.garage) {
+            if (v.getId() == id) return v;
+        }
+        throw new VehicleNotFoundException("No vehicle found with id: " + id);
     }
 }

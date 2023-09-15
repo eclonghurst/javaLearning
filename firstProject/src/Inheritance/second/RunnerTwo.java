@@ -1,4 +1,6 @@
-package Inheritance;
+package Inheritance.second;
+
+import Inheritance.first.Car;
 
 public class RunnerTwo {
 
@@ -14,6 +16,6 @@ public class RunnerTwo {
 
         Car newCar = carShed.getVehicle();
         System.out.println(newCar.calcBill());
-        
+
     }
 }

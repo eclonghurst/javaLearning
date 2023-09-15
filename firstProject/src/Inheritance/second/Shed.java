@@ -1,7 +1,6 @@
-package Inheritance;
+package Inheritance.second;
 
-import java.util.ArrayList;
-import java.util.List;
+import Inheritance.first.Vehicle;
 
 public class Shed<V extends Vehicle> {
 

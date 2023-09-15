@@ -1,6 +1,6 @@
-package Inheritance;
+package Inheritance.second;
 
-public class Bird implements Flyable{
+public class Bird implements Flyable {
 
     String name;
     int weight;
